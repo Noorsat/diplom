@@ -1,0 +1,119 @@
+.creation {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: 250px auto 0 auto;
+}
+
+.creation__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.creation__list {
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+    margin-top: 66px;
+}
+
+.creation__item {
+    display: flex;
+    gap: 33px;
+}
+
+.creation__label {
+    width: 30%;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.creation__label span {
+    color: red;
+}
+
+.creation__input {
+    width: 70%;
+    padding-top: 25px;
+    resize: none;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-indent: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #BABABA;
+    border-radius: 20px;
+}
+
+.file__input {
+    cursor: pointer;
+    text-indent: 90px;
+    height: 82px;
+    background: #FFFF url("../../shared/icons/clip_icon.svg") no-repeat 25px center;
+}
+
+.file__input::file-selector-button {
+    display: none;
+}
+
+.first__input {
+    height: 143px;
+}
+
+.second__input {
+    height: 621px;
+}
+
+.creation__input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.creation__submit__btn {
+    padding: 24px 96px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    background-color: #FF8C8C;
+    border-radius: 30px;
+    color: #FFFF;
+    align-self: center;
+    margin-top: 72px;
+}
+
+.creation__select {
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 30px;
+    font-size: 26px;
+    padding: 15px 0;
+    border-right: 16px solid transparent;
+    text-indent: 20px;
+}
+
+@media (max-width: 1024px) {
+    .creation__item {
+        flex-direction: column;
+    }
+
+    .creation__input, .creation__label {
+        width: 100%;
+    }
+
+    .creation__label {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .creation__input {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .creation__submit__btn {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,133 @@
+.post__item {
+    display: flex;
+    max-height: 472px;
+    gap: 40px;
+}
+
+.post__item__image {
+    object-fit: cover;
+    background-color: #FFF;
+    height: 472px;
+    max-width: 352px;
+}
+
+.post__item__info {
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post__item__info__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+    margin-bottom: 22px;
+}
+
+.post__item__info__content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.post__item__info__footer {
+    display: flex;
+    margin-top: 77px;
+    justify-content: space-between;
+}
+
+.post__item__reactions {
+    display: flex;
+    gap: 23px;
+}
+
+.post__item__reaction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post__item__reaction__icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.post__item__reaction__count {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.post__item__read__btn {
+    padding: 16px 26px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFF;
+    background-color: #FF7B7B;
+    border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+    .post__item {
+        flex-direction: column;
+        max-height: unset;
+        gap: 12px;
+    }
+
+    .post__item__image {
+        border-radius: 20px;
+        max-width: 100%;
+    }
+
+    .post__item__info__title {
+        font-size: 34px;
+        margin-bottom: 0;
+    }
+
+    .post__item__info__content {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:600px) {
+    .post__item__image {
+        height: 199px;
+    }
+    .post__item__info__title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .post__item__info__content {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .post__item__reaction__count {
+        font-size: 15px;
+    }
+    .post__item__reaction__icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .post__item__read__btn {
+        height: 30px;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0 11px;
+    }
+
+    .post__item__info__footer {
+        margin-top: 11px;
+        flex-direction: column;
+    }
+}

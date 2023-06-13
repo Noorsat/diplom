@@ -1,0 +1,13 @@
+/diploma-front/node_modules
+.idea
+/diploma-front/.idea
+.DS_Store
+/diploma-backend/node_modules
+
+#env files
+/diploma-backend/.env
+/diploma-backend/.env.local
+/diploma-backend/.env.production
+/diploma-front/.env
+/diploma-front/.env.local
+/diploma-front/.env.production

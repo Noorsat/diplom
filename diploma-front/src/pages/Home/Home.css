@@ -1,0 +1,136 @@
+.home {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.home__slogan {
+    margin-top: 50px;
+    position: relative;
+}
+
+.home__slogan__image {
+    max-width: 100%;
+    height: 656px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.home__slogan__block {
+    position: absolute;
+    left: calc(50% - 250px);
+    top: calc(50% - 100px);
+}
+
+.home__slogan__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 96px;
+}
+
+.home__slogan__subtitle {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.home__marketing {
+    padding: 13px 0;
+    margin: 150px auto;
+    max-width: 1600px;
+}
+
+.home__marketing__question {
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 80px;
+    text-align: center;
+}
+
+.home__marketing__answer {
+    margin-top: 68px;
+    font-weight: 400;
+    font-size: 1.75em;
+    line-height: 45px;
+    text-align: center;
+}
+
+.home__popular__posts__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    margin-bottom: 68px;
+}
+
+.home__posts {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+
+.home__not__found {
+    font-size: 32px;
+    text-align: center;
+    opacity: 0.25;
+}
+
+@media (max-width: 1024px) {
+    .home__posts {
+        padding: 0 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home__slogan {
+        height: unset;
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .home__slogan__block {
+        left: calc(50% - 80px);
+        top: calc(50% - 50px);
+    }
+
+    .home__slogan__title {
+        font-size: 32px;
+    }
+
+    .home__slogan__image {
+        height: 237px;
+    }
+
+    .home__slogan__subtitle {
+        font-size: 26px;
+    }
+
+    .home__marketing {
+        margin: 25px auto;
+    }
+
+    .home__marketing__question {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .home__marketing__answer {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .home__popular__posts__title {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .home__posts {
+        gap: 65px;
+    }
+
+    .home__not__found {
+        font-size: 20px;
+    }
+}
+

@@ -1,0 +1,13 @@
+.App {
+    background-color: #FFF4F4;
+}
+
+.App__inner {
+    padding: 30px 78px 0 69px;
+}
+
+@media (max-width: 1024px) {
+    .App__inner {
+        padding: 30px 30px 0 30px;
+    }
+}

@@ -1,0 +1,98 @@
+.login {
+    margin: 210px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login__label {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.login__area {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 38.45px;
+}
+
+.login__input__label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 21px;
+}
+
+.login__input {
+    width: 572px;
+    max-width: 600px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    padding: 25px 0 25px 33px;
+    border-radius: 12px;
+}
+
+.login__input, .login__input::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.login__submit__btn {
+    margin: 82.5px auto 48px auto;
+    width: 289px;
+    max-width: 289px;
+    background-color: #FF7B7B;
+    color: #FFF;
+    padding: 25px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    border-radius: 12px;
+    align-self: center;
+}
+
+.login__no__account {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.login__create__account {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+@media (max-width: 768px) {
+    .login {
+        margin: 167px 0;
+    }
+
+    .login__area {
+        margin: 0;
+    }
+
+    .login__submit__btn {
+        padding: 15px 0;
+        width: 208px;
+        margin: 30px 0 15px 0;
+    }
+
+    .login__no__account, .login__create__account, .login__input {
+        font-size: 16px;
+    }
+
+    .login__input {
+        width: 100%;
+        padding: 18px 0 18px 18px;
+    }
+
+}

@@ -1,0 +1,138 @@
+.help {
+    max-width: 1600px;
+    margin: 115px auto 0 auto;
+}
+
+.help__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.help__selectors {
+    margin: 53px auto 83px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.help__select__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.help__select__label, .help__select {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.help__select {
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 30px;
+    max-width: 537px;
+    width: 100%;
+    font-size: 26px;
+    padding: 15px 0;
+    border-right: 16px solid transparent;
+    text-indent: 20px;
+}
+
+.help__result__text {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.help__result__list {
+    margin-top: 54px;
+}
+
+.help__result__card {
+    padding: 23px 20px 23px 47px;
+    background-color: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.help__result__card__location {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.help__result__card__phone {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.help__result__bullet {
+    padding-left: 40px;
+}
+
+.help__result__card__description, .help__result__media {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+@media (max-width: 1024px) {
+    .help__select__block {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .help__selectors {
+        margin-bottom: 43px;
+    }
+    .help__result__card {
+        padding-left: 25px;
+    }
+
+    .help__title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .help__select__label, .help__select {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .help__result__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .help__result__card__location {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .help__result__card__phone {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .help__result__bullet {
+        padding-left: 15px;
+    }
+
+    .help__result__card__description, .help__result__media {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

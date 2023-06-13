@@ -1,0 +1,86 @@
+.register {
+    margin: 210px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register__label {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.register__area {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 38.45px;
+}
+
+.register__input__label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 21px;
+}
+
+.register__input {
+    width: 572px;
+    max-width: 600px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    padding: 25px 0 25px 33px;
+    border-radius: 12px;
+}
+
+.register__input, .register__input::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.register__submit__btn {
+    margin: 82.5px auto 48px auto;
+    width: 289px;
+    max-width: 289px;
+    background-color: #FF7B7B;
+    color: #FFF;
+    padding: 25px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    border-radius: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .register {
+        margin: 167px 0;
+    }
+
+    .register__area {
+        margin: 0;
+    }
+
+    .register__submit__btn {
+        width: 208px;
+        font-size: 20px;
+        margin-top: 50.5px;
+        padding: 15px 0;
+    }
+
+    .register__no__account, .register__create__account, .register__input {
+        font-size: 16px;
+    }
+
+    .register__input {
+        width: 100%;
+        padding: 18px 0 18px 18px;
+        font-size: 16px;
+    }
+
+}

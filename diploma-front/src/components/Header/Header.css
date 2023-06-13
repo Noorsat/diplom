@@ -1,0 +1,233 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header__burger__icon {
+    display: none;
+}
+
+.header__logo__text {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.header__routes {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.header__route__text {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.header__search__block {
+    position: relative;
+}
+
+.header__search {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 9px 0 9px 15px;
+    min-width: 272px;
+    color: #979797;
+}
+
+.header__search::placeholder {
+    color: #979797;
+}
+
+.header__search__dropdown {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.dropdown__item {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header__mobile__search {
+    display: none;
+}
+
+.header__user__avatar {
+    cursor: pointer;
+    background-color: #EAB79B;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 36px;
+    color: #FFF;
+}
+
+.header__login__btn {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFF;
+    background: #FF7B7B;
+    mix-blend-mode: darken;
+    border-radius: 20px;
+    padding: 8px 24px;
+}
+
+.sidebar__background {
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all linear .15s;
+    z-index: 98;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 0;
+    width: 0;
+    visibility: hidden;
+    height: 100vh;
+    position: fixed;
+    background-color: #FFF;
+    left: 0;
+    top: 0;
+    transition: all linear .15s;
+    z-index: 99;
+}
+
+.sidebar__route {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.show {
+    visibility: visible;
+    max-width: 400px;
+    width: 400px;
+    transition: all linear .15s;
+}
+
+.modal__window {
+    visibility: hidden;
+    opacity: 0;
+    top: 125px;
+    position: absolute;
+    z-index: 99;
+    max-width: 385px;
+    max-height: 460px;
+    background-color: #FFF;
+    border-radius: 20px;
+    right: 75px;
+    padding: 18px 32px 0 32px;
+    transition: all linear .15s;
+}
+
+.modal__window__username {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: all linear .15s;
+}
+
+.modal__window__route {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 48px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.modal__window__route:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 1440px) {
+    .header__logo__text {
+        font-size: 32px;
+        line-height: 20px;
+    }
+
+    .header__route__text, .header__login__btn {
+        font-size: 22px;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__mobile__search {
+        display: block;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .header__route__text {
+        display: none;
+    }
+
+    .header__burger__icon {
+        display: block;
+    }
+
+    .header__login__btn {
+        font-size: 16px;
+    }
+
+    .modal__window {
+        right: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__logo__text {
+        font-size: 24px;
+    }
+
+    .header__login__btn, .header__mobile__search {
+        display: none;
+    }
+
+    .modal__window__route, .modal__window__username {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
